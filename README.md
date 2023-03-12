@@ -1,6 +1,8 @@
 # ET57
 Clone of TI-57 calculator with ATmega8 processor.
+
 (c) 2020 Miroslav Nemecek, Panda38@seznam.cz
+
 open source
 
 Translation of manuals into English and French: Pierre Houbert http://pierre.phweb.me
@@ -8,6 +10,7 @@ Translation of manuals into English and French: Pierre Houbert http://pierre.phw
 Last update: 1.11.2020, build 201101
 
 project home web page: https://www.breatharian.eu/hw/et57/index_en.html
+
 ET-57 on GitHub: https://github.com/Panda381/ET57
 
 
@@ -99,14 +102,25 @@ Used components
 Note: The LCD display shown here is not verified if it works with the specified connection and was selected only by similarity.
 
 958-174, 1 piece, ATMEGA8A-AU TQFP32 ATMEL, 66 Kc https://www.gme.cz/atmega8a-au-tqfp32-atmel
+
 513-219, 1 piece, LCD alfanumeric display 2x16 haracters, green WH1602A-YGH-CT, 139 Kc https://www.gme.cz/lcd-alfanumericky-displej-winstar-wh1602a-ygh-ct
+
 832-177, 1 piece, Connector USB-MINI B F SMD, 17 Kc https://www.gme.cz/usb-konektor-usb-mini-b-f-smd
+
 630-158, 40 pieces, Microswitch TC-0108-T, 2.80 Kc (10 ks 2.11) ... 84.40 Kc https://www.gme.cz/tc-0108-t
+
 832-017, 1 piece, Pin rail S1G20 2,54mm, 3.60 Kc https://www.gme.cz/oboustranny-kolik-s1g20-2-54mm
+
 832-470, 1 piece, Pin rail S1G08W 2,54mm, 2.30 Kc https://www.gme.cz/oboustranny-kolik-s1g08w-2-54mm
+
 906-096, 1 piece, Ceramic capacitor CKS0805 100n/50V X7R 10%, 5.50 Kc https://www.gme.cz/cks0805-100n-50v-x7r-10-yageo
+
 906-089, 1 piece, Ceramic capacitor CKS0805 10n/50V X7R 10% YAGEO, 2.20 Kc https://www.gme.cz/cks0805-10n-50v-x7r-10-yageo
+
 901-029, 2 pieces, SMD Resistor R0805 1k0 5%, 0.68 Kc ... 1.36 Kc https://www.gme.cz/r0805-1k0-5-yageo
+
 901-573, 1 piece, SMD Resistor R0805 15R 1%, 2.50 Kc https://www.gme.cz/r0805-15r-1-yageo
+
 661-073, 1 piece, Fotocuprextit 75x100x1,5 one-sided, 39 Kc https://www.gme.cz/fotocuprextit-75x100x1-5-jednovrstvy
+
 Sum of the price for all 324 CZK (without photocuprextite and without cover).
