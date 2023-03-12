@@ -83,12 +83,19 @@ For hardware ET-58, ATmega88: low 42, high D6, ext F9, ATmega168: low 42, high D
 An 8-pin KONPC-SPK-8 busbar with the following pin assignment is used as the ISP connector:
 
 1 SCK
+
 2 MISO
+
 3 MOSI
+
 4 orientation key (pin missing, blinded in the connector so that it cannot be inserted)
+
 5 /RESET
+
 6 GND (ground, 0V)
+
 7 VCC (power,+5V)
+
 8 not used
 
 
