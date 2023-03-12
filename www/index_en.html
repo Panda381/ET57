@@ -1,0 +1,396 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+<meta name='language' content='english' /> 
+<meta name='content-language' content='en' /> 
+<title>ET-57</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<div align="center" style="margin-top: 0px;"><center>
+<table border="0" width="100%">
+    <tr>
+        <td width="33%"><p align="left"><a href="../index_en.html"><font
+        face="Arial">&lt;&lt;&nbsp;Back</font></a></p>
+        </td>
+        <td width="33%">&nbsp;</td>
+        <td width="34%"><p align="right"><a href="index.html"><font
+        face="Arial">Cesky: <img src="../../cz.gif"
+        width="50" height="30" /></font></a><font face="Arial">, <u>English:</u>
+        <img src="../../en2.gif" border="0" width="50" height="30" /></font></p>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+<p align="center"><font color="#FF8000" size="6" face="Arial"><strong>ET-57
+- clone of TI-57 calculator</strong></font></p>
+
+<p align="center"><font size="4" face="Arial">Clone of TI-57
+calculator with ATmega8 processor.</font></p>
+
+<p align="center"><font size="3" face="Arial">Last update:
+1.11.2020, build 201101</font></p>
+
+<p align="center"><a href="dwn/ET57_User_Manual_CZ.pdf"><font
+size="3" face="Arial">User Manual in PDF - Czech</font></a><font size="3"
+face="Arial"></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manuel_FR_A4.pdf"><font
+size="3" face="Arial">User Manual in PDF - French</font></a><font
+size="3" face="Arial">, by <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manuel_FR_A5.pdf"><font
+size="3" face="Arial">User Manual in PDF for A5 print - French</font></a><font
+size="3" face="Arial">, by <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manual_EN_A4.pdf"><font
+size="3" face="Arial">User Manual in PDF - English</font></a><font
+size="3" face="Arial">, by <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manual_EN_A5.pdf"><font
+size="3" face="Arial">User Manual in PDF for A5 print - English</font></a><font
+size="3" face="Arial">, by <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="img/ET57_1.jpg"><font face="Arial"><img
+src="img/ET57_1_m.jpg" border="0" width="301" height="400"></font></a></p>
+
+<p><font face="Arial">The ET-57 calculator was created as an
+effort to fit a fully functional programmable calculator into the
+8 KB memory of the ATmega8 processor. The popular TI-57
+calculator from Texas Instruments from 1977 was chosen as a
+model. This is not a replica with processor emulation, but an
+independent new firmware based on the functionality of the
+original calculator. The calculator could be expanded with more
+memory and more functions without compromising compatibility with
+the original. Programs for the TI-57 can usually be run in the
+ET-57 calculator without the need for modifications.</font></p>
+
+<p><font face="Arial">The ET-57 calculator is intended for those
+interested in retro technology and also as a teaching aid for
+school clubs, thanks to its ease of use, economical coding of
+programs, low price, support for external peripherals and fully
+open code.</font></p>
+
+<p><font face="Arial">The ET-57 calculator software is also
+available for the </font><a href="../et58/index.html"><font
+face="Arial">ET-58</font></a><font face="Arial"> calculator
+hardware, as an ET-57B variant.</font></p>
+
+<p><font size="2" face="Arial"><em>Note: Click on the images to
+enlarge them</em></font></p>
+
+<p><font face="Arial"><strong>Properties:</strong></font></p>
+
+<ul>
+    <li><font face="Arial">ATmega8 processor (8MHz, 8KB ROM, 1KB
+        RAM, 512B EEPROM)</font></li>
+    <li><font face="Arial">5 V supply voltage (from USB charger
+        or from USB port)</font></li>
+    <li><font face="Arial">Calculations in BCD code</font></li>
+    <li><font face="Arial">Accuracy of calculations 17 digits</font></li>
+    <li><font face="Arial">Accuracy of basic registers 15 digits</font></li>
+    <li><font face="Arial">Accuracy of extended registers 13
+        digits</font></li>
+    <li><font face="Arial">Display data at 11 significant digits</font></li>
+    <li><font face="Arial">Exponent 2 digits, range + - 99</font></li>
+    <li><font face="Arial">10 program spaces</font></li>
+    <li><font face="Arial">Each space 50 program steps (total 500
+        steps)</font></li>
+    <li><font face="Arial">User program stored in EEPROM (without
+        battery)</font></li>
+    <li><font face="Arial">10 basic registers (accessible by
+        direct addressing)</font></li>
+    <li><font face="Arial">70 extended registers (accessible by
+        index addressing)</font></li>
+    <li><font face="Arial">Two-line LCD display (2 x 16
+        alphanumeric characters)</font></li>
+    <li><font face="Arial">40 buttons</font></li>
+    <li><font face="Arial">Control of external devices via ISP
+        connector</font></li>
+    <li><font face="Arial">Calculator code completely written in
+        AVR assembler</font></li>
+    <li><font face="Arial">Exponential and logarithmic functions</font></li>
+    <li><font face="Arial">Trigonometric functions</font></li>
+    <li><font face="Arial">Factorial</font></li>
+    <li><font face="Arial">Random number generator</font></li>
+    <li><font face="Arial">Index access to variables</font></li>
+    <li><font face="Arial">Scientific display mode with exponent</font></li>
+    <li><font face="Arial">Statistical function</font></li>
+    <li><font face="Arial">10 labels in each program space</font></li>
+    <li><font face="Arial">Function calls and jumps between
+        program spaces</font></li>
+    <li><font face="Arial">Fully open source hardware and
+        software</font></li>
+</ul>
+
+<p><a href="img/ET57_2.jpg"><font face="Arial"><img
+src="img/ET57_2_m.jpg" border="0" width="351" height="400"></font></a></p>
+
+<p><font face="Arial"><strong>Diagram:</strong></font></p>
+
+<p><a href="img/ET57_diagram.png"><font face="Arial"><img
+src="img/ET57_diagram_m.jpg" border="0" width="500" height="431"></font></a></p>
+
+<p><font face="Arial">The USB connector is only used to power +5V
+the calculator from an external charger or USB port. The
+processor uses an internal 8 MHz RC oscillator. Resistor R2 is
+used to limit the LED current for the display backlight. With
+this variant of the display, it is probably possible to omit and
+connect directly to GND (not verified). Resistor R3 regulates the
+bias voltage for the display contrast. It may be necessary to
+change to a different value for another display.</font></p>
+
+<p><font face="Arial"><strong>Construction:</strong></font></p>
+
+<p><font face="Arial">For maximum simplification of the
+construction, microswitches without a fingerboard were used as
+buttons, only protruding above the surface of the calculator. The
+display is soldered via a pin strip. The printed circuit board
+was chosen to be 10x7.5 cm because it is both available from GM
+and meets the board size limit for the free Eagle version. The
+printed circuit board is sufficient on one side, supplemented by
+5 wire jumpers. The construction was chosen &quot;sandwich&quot;
+for simplicity - from above and below the printed circuit board
+is screwed to the plexiglass boards. But they are not necessary
+and the calculator can be easily operated even without a cover -
+it is enough to place a paper template with button labels over
+the buttons.</font></p>
+
+<p><font face="Arial">The display was chosen with pins on the
+bottom to make do with a smaller printed circuit board (and also
+because I had a supply of these displays). I list a similar
+display in the parts list (I did not find the original one), but
+its suitability for replacement has not been verified, it must be
+verified. E.g. there may be a different order of pins for LED
+illumination - my display has the opposite numbering 15 and 16,
+but as a result the pins appear to be the same on the printed
+circuit board.</font></p>
+
+<p><font face="Arial">Bottom side of the printed circuit board:</font></p>
+
+<p><a href="img/ET57_bottom.png"><font face="Arial"><img
+src="img/ET57_bottom_m.jpg" border="0" width="315" height="400"></font></a></p>
+
+<p><font face="Arial">Top side (wire conections are enough):</font></p>
+
+<p><a href="img/ET57_top.png"><font face="Arial"><img
+src="img/ET57_top_m.jpg" border="0" width="315" height="400"></font></a></p>
+
+<p><font face="Arial">Mounting:</font></p>
+
+<p><a href="img/ET57_mounting.png"><font face="Arial"><img
+src="img/ET57_mounting_m.jpg" border="0" width="258" height="400"></font></a></p>
+
+<p><font face="Arial">Be careful when attaching wire to pin 8 of
+the ISP connector, it could touch the display cover plate. It is
+therefore guided by an arc. The display is soldered via a pin
+strip. Before soldering the pin on the display, press it from top
+to bottom (as far as it will go) so that it does not obstruct the
+cover. Although I soldered the ISP programming connector from the
+display side, it may be more practical to solder from the PCB
+side, because the display of the connector interferes a bit.</font></p>
+
+<p><font face="Arial">Printed circuit board printing:</font></p>
+
+<p><a href="img/ET57_print.png"><font face="Arial"><img
+src="img/ET57_print_m.jpg" border="0" width="258" height="400"></font></a></p>
+
+<p><font face="Arial">Button labels:</font></p>
+
+<p><font face="Arial">The label of the buttons can be glued to
+the cover or just placed over the buttons. The holes for the
+buttons are punched through the intersection of 4 mm on the skin.
+Printed paper can be coated with laminating foil or transparent
+double-sided insulating tape.</font></p>
+
+<p><a href="img/ET57_keyboard.png"><font face="Arial"><img
+src="img/ET57_keyboard_m.jpg" border="0" width="373" height="400"></font></a></p>
+
+<p><font face="Arial">Button label for ET-57B variant (hardware
+for ET-58):</font></p>
+
+<p><a href="img/ET57B_keyboard.png"><font face="Arial"><img
+src="img/ET57B_keyboard_m.jpg" border="0" width="310"
+height="400"></font></a></p>
+
+<p><font face="Arial">PCB mounting:</font></p>
+
+<p><a href="img/ET57_3.jpg"><font face="Arial"><img
+src="img/ET57_3_m.jpg" border="0" width="307" height="400"></font></a></p>
+
+<p><a href="img/ET57_4.jpg"><font face="Arial"><img
+src="img/ET57_4_m.jpg" border="0" width="287" height="400"></font></a></p>
+
+<p><a href="img/ET57_5.jpg"><font face="Arial"><img
+src="img/ET57_5_m.jpg" border="0" width="400" height="105"></font></a></p>
+
+<p><font face="Arial">The top and bottom cover of the plexiglass
+calculator and the labeled buttons:</font></p>
+
+<p><a href="img/ET57_box.png"><font face="Arial"><img
+src="img/ET57_box_m.jpg" border="0" width="269" height="400"></font></a></p>
+
+<p><a href="img/ET57_6.jpg"><font face="Arial"><img
+src="img/ET57_6_m.jpg" border="0" width="275" height="400"></font></a></p>
+
+<p><font face="Arial">A hole for the USB power connector needs to
+be cut in the bottom cover. It might also be useful to cut a hole
+for the ISP programming connector (it is also used to connect
+peripherals).</font></p>
+
+<p><a href="img/ET57_7.jpg"><font face="Arial"><img
+src="img/ET57_7_m.jpg" border="0" width="281" height="400"></font></a></p>
+
+<p><font face="Arial">The boards are sandwiched together using
+spacers.</font></p>
+
+<p><a href="img/ET57_8.jpg"><font face="Arial"><img
+src="img/ET57_8_m.jpg" border="0" width="400" height="152"></font></a></p>
+
+<p><a href="img/ET57_9.jpg"><font face="Arial"><img
+src="img/ET57_9_m.jpg" border="0" width="294" height="400"></font></a></p>
+
+<p><a href="img/ET57_10.jpg"><font face="Arial"><img
+src="img/ET57_10_m.jpg" border="0" width="400" height="153"></font></a></p>
+
+<p><a href="img/ET57_11.jpg"><font face="Arial"><img
+src="img/ET57_11_m.jpg" border="0" width="400" height="201"></font></a></p>
+
+<p><font face="Arial"><strong>Firmware programming:</strong></font></p>
+
+<p><font face="Arial">The firmware can be downloaded here: </font><a
+href="dwn/ET57_src.zip"><font face="Arial">dwn/ET57_src.zip</font></a><font
+face="Arial">. It includes source code in the AVR assembler (compiled
+with WinAVR) and compiled HEX files for the ET-57 variant with
+ATmega8 processor, and files for the ET-57B variant (ET-58
+hardware) with ATmega88, ATmega168 or ATmega328 processor.</font></p>
+
+<p><font face="Arial">ATmega8 processor fuse settings (for ET-57
+hardware): low E4, high D1.</font></p>
+
+<p><font face="Arial">For hardware ET-58, ATmega88: low 42, high
+D6, ext F9, ATmega168: low 42, high D6, ext F9, ATmega328: low
+42, high D1, ext FE.</font></p>
+
+<p><font face="Arial">An 8-pin KONPC-SPK-8 busbar with the
+following pin assignment is used as the ISP connector:</font></p>
+
+<p><font face="Arial">1 SCK<br>
+2 MISO<br>
+3 MOSI<br>
+4 orientation key (pin missing, blinded in the connector so that
+it cannot be inserted)<br>
+5 /RESET<br>
+6 GND (ground, 0V)<br>
+7 VCC (power,+5V)<br>
+8 not used</font></p>
+
+<p><font face="Arial"><strong>External device and ports:</strong></font></p>
+
+<p><font face="Arial">The calculator allows the connection of
+external peripherals via the ISP connector, with the SPI
+protocol. As an example, the LED control on the ERAM100 effects
+frame (ATmega8 processor) is shown here.</font></p>
+
+<p><a href="img/ET57_12.jpg"><font face="Arial"><img
+src="img/ET57_12_m.jpg" border="0" width="350" height="400"></font></a></p>
+
+<p><a href="img/ET57_13.jpg"><font face="Arial"><img
+src="img/ET57_13_m.jpg" border="0" width="400" height="257"></font></a></p>
+
+<p><font face="Arial">ERAM100 simplified connection:</font></p>
+
+<p><a href="img/ERAM100.png"><font face="Arial"><img
+src="img/ERAM100_m.jpg" border="0" width="400" height="215"></font></a></p>
+
+<p><font face="Arial">Download source code and firmware for
+ERAM100 (compilation with WinAVR): </font><a
+href="dwn/ERAM100.zip"><font face="Arial">dwn/ERAM100.zip</font></a><font
+face="Arial">.</font></p>
+
+<h2><font face="Arial">Downloads</font></h2>
+
+<p><a href="dwn/ET57_src.zip"><font face="Arial">Source codes of
+ET-57 with firmware</font></a></p>
+
+<p><a href="dwn/ERAM100.zip"><font face="Arial">Source codes of
+ERAM100 with firmware and diagram</font></a></p>
+
+<p><a href="dwn/ET57_diagram.zip"><font face="Arial">Diagram in
+Eagle Free</font></a></p>
+
+<p><a href="dwn/ET57_help.zip"><font face="Arial">User manual - Czech</font></a></p>
+
+<p><a href="dwn/ET57_help_FR.zip"><font face="Arial">User manual - French</font></a></p>
+
+<p><a href="dwn/ET57_help_EN.zip"><font face="Arial">User manual - English</font></a></p>
+
+<p><a href="dwn/ET57_png.zip"><font face="Arial">Graphic
+materials</font></a><font face="Arial"> (diagram and printed
+circuit board)</font></p>
+
+<h2><font face="Arial">Used components</font></h2>
+
+<p><font face="Arial">Note: The LCD display shown here is not
+verified if it works with the specified connection and was
+selected only by similarity.</font></p>
+
+<ul>
+    <li><font face="Arial">958-174, 1 piece, ATMEGA8A-AU TQFP32
+        ATMEL, 66 Kč </font><a
+        href="https://www.gme.cz/atmega8a-au-tqfp32-atmel"><font
+        face="Arial">https://www.gme.cz/atmega8a-au-tqfp32-atmel</font></a></li>
+    <li><font face="Arial">513-219, 1 piece, LCD alfanumerický
+        displej 2x16 znaků, zelený WH1602A-YGH-CT, 139 Kč </font><a
+        href="https://www.gme.cz/lcd-alfanumericky-displej-winstar-wh1602a-ygh-ct"><font
+        face="Arial">https://www.gme.cz/lcd-alfanumericky-displej-winstar-wh1602a-ygh-ct</font></a></li>
+    <li><font face="Arial">832-177, 1 piece, Konektor USB-MINI B
+        F SMD, 17 Kč </font><a
+        href="https://www.gme.cz/usb-konektor-usb-mini-b-f-smd"><font
+        face="Arial">https://www.gme.cz/usb-konektor-usb-mini-b-f-smd</font></a></li>
+    <li><font face="Arial">630-158, 40 pieces, Mikrospínač
+        TC-0108-T, 2.80 Kč (10 ks 2.11) ... 84.40 Kč </font><a
+        href="https://www.gme.cz/tc-0108-t"><font face="Arial">https://www.gme.cz/tc-0108-t</font></a></li>
+    <li><font face="Arial">832-017, 1 piece, Kolíková lišta
+        S1G20 2,54mm, 3.60 Kč </font><a
+        href="https://www.gme.cz/oboustranny-kolik-s1g20-2-54mm"><font
+        face="Arial">https://www.gme.cz/oboustranny-kolik-s1g20-2-54mm</font></a></li>
+    <li><font face="Arial">832-470, 1 piece, Kolíková lišta
+        S1G08W 2,54mm, 2.30 Kč </font><a
+        href="https://www.gme.cz/oboustranny-kolik-s1g08w-2-54mm"><font
+        face="Arial">https://www.gme.cz/oboustranny-kolik-s1g08w-2-54mm</font></a></li>
+    <li><font face="Arial">906-096, 1 piece, Keramický
+        kondenzátor CKS0805 100n/50V X7R 10%, 5.50 Kč </font><a
+        href="https://www.gme.cz/cks0805-100n-50v-x7r-10-yageo"><font
+        face="Arial">https://www.gme.cz/cks0805-100n-50v-x7r-10-yageo</font></a></li>
+    <li><font face="Arial">906-089, 1 piece, Keramický
+        kondenzátor CKS0805 10n/50V X7R 10% YAGEO, 2.20 Kč </font><a
+        href="https://www.gme.cz/cks0805-10n-50v-x7r-10-yageo"><font
+        face="Arial">https://www.gme.cz/cks0805-10n-50v-x7r-10-yageo</font></a></li>
+    <li><font face="Arial">901-029, 2 pieces, SMD Rezistor R0805
+        1k0 5%, 0.68 Kč ... 1.36 Kč </font><a
+        href="https://www.gme.cz/r0805-1k0-5-yageo"><font
+        face="Arial">https://www.gme.cz/r0805-1k0-5-yageo</font></a></li>
+    <li><font face="Arial">901-573, 1 piece, SMD Rezistor R0805
+        15R 1%, 2.50 Kč </font><a
+        href="https://www.gme.cz/r0805-15r-1-yageo"><font
+        face="Arial">https://www.gme.cz/r0805-15r-1-yageo</font></a></li>
+    <li><font face="Arial">661-073, 1 piece, Fotocuprextit
+        75x100x1,5 jednovrstvý, 39 Kč </font><a
+        href="https://www.gme.cz/fotocuprextit-75x100x1-5-jednovrstvy"><font
+        face="Arial">https://www.gme.cz/fotocuprextit-75x100x1-5-jednovrstvy</font></a></li>
+</ul>
+
+<p><font face="Arial">Sum of the price for all 324 CZK (without
+photocuprextite and without cover).</font></p>
+
+<p align="right"><font face="Arial">Miroslav Nemecek</font></p>
+
+<p align="left"><a href="../index_en.html"><font size="3" face="Arial">&lt;&lt;&nbsp;Back</font></a></p>
+<p>&nbsp;</p>
+
+</body>
+</html>

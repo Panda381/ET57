@@ -1,0 +1,396 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+<meta name='language' content='czech' /> 
+<meta name='content-language' content='cs-cz' /> 
+<title>ET-57</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<div align="center" style="margin-top: 0px;"><center>
+<table border="0" width="100%">
+    <tr>
+        <td width="33%"><p align="left"><a href="../index.html"><font
+        face="Arial">&lt;&lt;&nbsp;Zpět</font></a></p>
+        </td>
+        <td width="33%">&nbsp;</td>
+        <td width="34%"><p align="right"><font face="Arial">  <u>Česky:</u>
+        <img src="../../cz2.gif" width="50" height="30" />, </font><a
+        href="index_en.html"><font face="Arial">English: <img
+        src="../../en.gif" border="0" width="50" height="30" /></font></a></p>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+<p align="center"><font color="#FF8000" size="6" face="Arial"><strong>ET-57
+- klon kalkulátoru TI-57</strong></font></p>
+
+<p align="center"><font size="4" face="Arial">Klon kalkulátoru
+TI-57 s procesorem ATmega8.</font></p>
+
+<p align="center"><font size="3" face="Arial">Poslední
+aktualizace: 1.11.2020, build 201101</font></p>
+
+<p align="center"><a href="dwn/ET57_User_Manual_CZ.pdf"><font
+size="3" face="Arial">uživatelská příručka v PDF - Česky</font></a><font size="3"
+face="Arial"></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manuel_FR_A4.pdf"><font
+size="3" face="Arial">uživatelská příručka v PDF - Francouzsky</font></a><font
+size="3" face="Arial">, překlad <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manuel_FR_A5.pdf"><font
+size="3" face="Arial">uživatelská příručka v PDF pro tisk A5 - Francouzsky</font></a><font
+size="3" face="Arial">, překlad <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manual_EN_A4.pdf"><font
+size="3" face="Arial">uživatelská příručka v PDF - Anglicky</font></a><font
+size="3" face="Arial">, překlad <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="dwn/ET-57_Manual_EN_A5.pdf"><font
+size="3" face="Arial">uživatelská příručka v PDF pro tisk A5 - Anglicky</font></a><font
+size="3" face="Arial">, překlad <a href="http://pierre.phweb.me">Pierre Houbert</a></font></p>
+
+<p align="center"><a href="img/ET57_1.jpg"><font face="Arial"><img
+src="img/ET57_1_m.jpg" border="0" width="301" height="400"></font></a></p>
+
+<p><font face="Arial">Kalkulátor ET-57 vznikl jako snaha
+vměstnat do 8 KB paměti procesoru ATmega8 plně funkční
+programovatelný kalkulátor. Jako vzor byl zvolen populární
+kalkulátor TI-57 firmy Texas Instruments z roku 1977. Nejedná
+se o repliku s emulací procesoru, ale o nezávislý nový
+firmware vycházející z funkčnosti původního kalkulátoru.
+Kalkulátor tak mohl být rozšířen o více paměti a více
+funkcí, aniž by tím utrpěla kompatibilita s originálem. V
+kalkulátoru ET-57 lze spouštět programy pro TI-57 většinou
+bez nutnosti úprav.</font></p>
+
+<p><font face="Arial">Kalkulátor ET-57 je určen zájemcům o
+retro techniku a také jako výuková pomůcka pro školní
+kroužky, a to díky snadnému použití, úspornému kódování
+programů, nízké ceně, podpoře externích periferií a plně
+otevřenému kódu.</font></p>
+
+<p><font face="Arial">Software kalkulátoru ET-57 je k dispozici
+též pro hardware kalkulátoru </font><a
+href="../et58/index.html"><font face="Arial">ET-58</font></a><font
+face="Arial">, jako varianta ET-57B.</font></p>
+
+<p><font size="2" face="Arial"><em>Pozn.: Obrázky zde uvedené
+zvětšíte kliknutím</em></font></p>
+
+<p><font face="Arial"><strong>Vlastnosti:</strong></font></p>
+
+<ul>
+    <li><font face="Arial">Procesor ATmega8 (8MHz, 8KB ROM, 1KB
+        RAM, 512B EEPROM)</font></li>
+    <li><font face="Arial">Napájecí napětí 5 V (z USB nabíječky
+        nebo z USB portu)</font></li>
+    <li><font face="Arial">Výpočty v BCD kódu</font></li>
+    <li><font face="Arial">Přesnost výpočtů 17 číslic</font></li>
+    <li><font face="Arial">Přesnost základních registrů 15 číslic</font></li>
+    <li><font face="Arial">Přesnost rozšířených registrů 13
+        číslic</font></li>
+    <li><font face="Arial">Zobrazení údaje na 11 platných číslic</font></li>
+    <li><font face="Arial">Exponent 2 číslice, rozsah +- 99</font></li>
+    <li><font face="Arial">10 programových prostorů</font></li>
+    <li><font face="Arial">Každý prostor 50 programových kroků
+        (celkem 500 kroků)</font></li>
+    <li><font face="Arial">Uživatelský program uchován v
+        EEPROM (bez baterie)</font></li>
+    <li><font face="Arial">10 základních registrů (přístupných
+        přímým adresováním)</font></li>
+    <li><font face="Arial">70 rozšířených registrů (přístupných
+        indexovým adresováním)</font></li>
+    <li><font face="Arial">Dvouřádkový LCD displej (2 x 16
+        alfanumerických znaků)</font></li>
+    <li><font face="Arial">40 tlačítek</font></li>
+    <li><font face="Arial">Ovládání externího zařízení přes
+        ISP konektor</font></li>
+    <li><font face="Arial">Kód kalkulátoru kompletně napsaný
+        v AVR assembleru</font></li>
+    <li><font face="Arial">Exponenciální a logaritmické funkce</font></li>
+    <li><font face="Arial">Trigonometrické funkce</font></li>
+    <li><font face="Arial">Faktoriál</font></li>
+    <li><font face="Arial">Generátor náhodných čísel</font></li>
+    <li><font face="Arial">Indexový přístup k proměnným</font></li>
+    <li><font face="Arial">Vědecký mód zobrazení s exponentem</font></li>
+    <li><font face="Arial">Statistická funkce</font></li>
+    <li><font face="Arial">10 návěští v každém programovém
+        prostoru</font></li>
+    <li><font face="Arial">Volání funkcí a skoky mezi
+        programovými prostory</font></li>
+    <li><font face="Arial">Hardware i software plně open source</font></li>
+</ul>
+
+<p><a href="img/ET57_2.jpg"><font face="Arial"><img
+src="img/ET57_2_m.jpg" border="0" width="351" height="400"></font></a></p>
+
+<p><font face="Arial"><strong>Zapojení:</strong></font></p>
+
+<p><a href="img/ET57_diagram.png"><font face="Arial"><img
+src="img/ET57_diagram_m.jpg" border="0" width="500" height="431"></font></a></p>
+
+<p><font face="Arial">Konektor USB je využit pouze k napájení
+kalkulačky +5V z externí nabíječky nebo z USB portu. Procesor
+používá interní RC oscilátor 8 MHz. Odpor R2 slouží k
+omezení proudu LED pro podsvícení displeje. U této varianty
+displeje lze zřejmě vypustit a propojit přímo s GND
+(neověřeno). Odpor R3 reguluje předpětí pro kontrast
+displeje. Pro jiný displej může být nutné změnit na jinou
+hodnotu.</font></p>
+
+<p><font face="Arial"><strong>Konstrukce:</strong></font></p>
+
+<p><font face="Arial">Pro maximální zjednodušení konstrukce
+byly jako tlačítka využity mikrospínače bez hmatníku, pouze
+vystupující nad plochu kalkulátoru. Displej je přiletován
+přes pinovou lištu. Plošný spoj byl zvolen rozměru 10x7.5 cm
+a to z toho důvodu, že je jednak tento rozměr v prodeji v GM a
+jednak splňuje omezení velikosti desky pro free verzi Eagle.
+Plošný spoj postačí jednostranný, doplněný 5 drátovými
+propojkami. Konstrukce byla pro jednoduchost zvolena
+&quot;sendvičová&quot; - shora i zdola je plošný spoj
+sešroubován s plexi deskami. Ale nejsou nutné a kalkulačku
+lze snadno provozovat i bez krytu - postačí přes tlačítka
+položit papírovou šablonu s popiskami tlačítek.</font></p>
+
+<p><font face="Arial">Displej byl zvolen s piny na spodní
+straně, aby se vystačilo s menším plošným spojem (a také
+protože jsem těchto displejů měl zásobu). V seznamu
+součástek uvádím podobný displej (původní jsem již
+nenašel), ale jeho vhodnost náhrady neověřena, nutno
+ověřit. Např. může být jiné pořadí pinů pro LED
+posvícení - u mého displeje je opačně číslování 15 a 16,
+ale výsledně na plošném spoji se zdají být piny shodně.</font></p>
+
+<p><font face="Arial">Dolní strana plošného spoje:</font></p>
+
+<p><a href="img/ET57_bottom.png"><font face="Arial"><img
+src="img/ET57_bottom_m.jpg" border="0" width="315" height="400"></font></a></p>
+
+<p><font face="Arial">Horní strana (stačí drátové propojky):</font></p>
+
+<p><a href="img/ET57_top.png"><font face="Arial"><img
+src="img/ET57_top_m.jpg" border="0" width="315" height="400"></font></a></p>
+
+<p><font face="Arial">Osazení:</font></p>
+
+<p><a href="img/ET57_mounting.png"><font face="Arial"><img
+src="img/ET57_mounting_m.jpg" border="0" width="258" height="400"></font></a></p>
+
+<p><font face="Arial">Při osazování propojky k pinu 8
+konektoru ISP pozor, mohla by se dotýkat krycího plechu
+displeje. Je proto vedena obloukem. Displej je přiletován přes
+pinovou lištu. Před přiletováním piny u displeje
+zamáčkněte shora dolů (na doraz), aby nepřekážely krytu.
+Programovací konektor ISP jsem sice přiletoval ze strany
+displeje, ale může být praktičtější přiletování ze
+strany plošných spojů, protože displej konektoru trochu
+překáží.</font></p>
+
+<p><font face="Arial">Potisk plošného spoje:</font></p>
+
+<p><a href="img/ET57_print.png"><font face="Arial"><img
+src="img/ET57_print_m.jpg" border="0" width="258" height="400"></font></a></p>
+
+<p><font face="Arial">Popiska tlačítek:</font></p>
+
+<p><font face="Arial">Popisku tlačítek lze přilepit na kryt,
+nebo jen tak položit přes tlačítka. Otvory pro tlačítka
+jsou proraženy průsečíkem 4 mm na kůži. Papír s potiskem
+lze potáhnout laminovací fólií nebo oboustranně průhlednou
+izolepou.</font></p>
+
+<p><a href="img/ET57_keyboard.png"><font face="Arial"><img
+src="img/ET57_keyboard_m.jpg" border="0" width="373" height="400"></font></a></p>
+
+<p><font face="Arial">Popiska tlačítek pro variantu ET-57B
+(hardware pro ET-58):</font></p>
+
+<p><a href="img/ET57B_keyboard.png"><font face="Arial"><img
+src="img/ET57B_keyboard_m.jpg" border="0" width="310"
+height="400"></font></a></p>
+
+<p><font face="Arial">Osazení plošného spoje:</font></p>
+
+<p><a href="img/ET57_3.jpg"><font face="Arial"><img
+src="img/ET57_3_m.jpg" border="0" width="307" height="400"></font></a></p>
+
+<p><a href="img/ET57_4.jpg"><font face="Arial"><img
+src="img/ET57_4_m.jpg" border="0" width="287" height="400"></font></a></p>
+
+<p><a href="img/ET57_5.jpg"><font face="Arial"><img
+src="img/ET57_5_m.jpg" border="0" width="400" height="105"></font></a></p>
+
+<p><font face="Arial">Horní a dolní kryt kalkulačky z
+plexiskla a přilepenou popiskou tlačítek:</font></p>
+
+<p><a href="img/ET57_box.png"><font face="Arial"><img
+src="img/ET57_box_m.jpg" border="0" width="269" height="400"></font></a></p>
+
+<p><a href="img/ET57_6.jpg"><font face="Arial"><img
+src="img/ET57_6_m.jpg" border="0" width="275" height="400"></font></a></p>
+
+<p><font face="Arial">V dolním krytu je potřeba vyříznout
+otvor pro napájecí USB konektor. Mohlo by být užitečné
+vyříznout otvor i pro programovací ISP konektor (používá se
+i pro připojení periferií).</font></p>
+
+<p><a href="img/ET57_7.jpg"><font face="Arial"><img
+src="img/ET57_7_m.jpg" border="0" width="281" height="400"></font></a></p>
+
+<p><font face="Arial">Desky jsou sendvičově sešroubovány
+pomocí distančních sloupků.</font></p>
+
+<p><a href="img/ET57_8.jpg"><font face="Arial"><img
+src="img/ET57_8_m.jpg" border="0" width="400" height="152"></font></a></p>
+
+<p><a href="img/ET57_9.jpg"><font face="Arial"><img
+src="img/ET57_9_m.jpg" border="0" width="294" height="400"></font></a></p>
+
+<p><a href="img/ET57_10.jpg"><font face="Arial"><img
+src="img/ET57_10_m.jpg" border="0" width="400" height="153"></font></a></p>
+
+<p><a href="img/ET57_11.jpg"><font face="Arial"><img
+src="img/ET57_11_m.jpg" border="0" width="400" height="201"></font></a></p>
+
+<p><font face="Arial"><strong>Programování firmware:</strong></font></p>
+
+<p><font face="Arial">Firmware je ke stažení zde: </font><a
+href="dwn/ET57_src.zip"><font face="Arial">dwn/ET57_src.zip</font></a><font
+face="Arial">. Součástí jsou zdrojové kódy v assembleru AVR
+(překlad s WinAVR) a přeložené HEX soubory pro variantu ET-57
+s procesorem ATmega8, a soubory pro variantu ET-57B (hardware
+ET-58) s procesorem ATmega88, ATmega168 nebo ATmega328.</font></p>
+
+<p><font face="Arial">Nastavení pojistek procesoru ATmega8 (pro
+hardware ET-57): low E4, high D1.</font></p>
+
+<p><font face="Arial">Pro hardware ET-58, ATmega88: low 42, high
+D6, ext F9, ATmega168: low 42, high D6, ext F9, ATmega328: low
+42, high D1, ext FE.</font></p>
+
+<p><font face="Arial">Jako ISP konektor je použita 8-pinová
+lišta KONPC-SPK-8 s následujícím obsazením pinů:</font></p>
+
+<p><font face="Arial">1 SCK<br>
+2 MISO<br>
+3 MOSI<br>
+4 orientační klíč (pin chybí, v konektoru zaslepen aby nešel
+zasunout)<br>
+5 /RESET<br>
+6 GND (zem, 0V)<br>
+7 VCC (napájení,+5V)<br>
+8 nepoužito</font></p>
+
+<p><font face="Arial"><strong>Externí zařízení a porty:</strong></font></p>
+
+<p><font face="Arial">Kalkulátor umožňuje připojení externí
+periferie přes ISP konektor, s SPI protokolem. Jako příklad je
+zde uvedeno ovládání LED na efektovém rámu ERAM100 (procesor
+ATmega8).</font></p>
+
+<p><a href="img/ET57_12.jpg"><font face="Arial"><img
+src="img/ET57_12_m.jpg" border="0" width="350" height="400"></font></a></p>
+
+<p><a href="img/ET57_13.jpg"><font face="Arial"><img
+src="img/ET57_13_m.jpg" border="0" width="400" height="257"></font></a></p>
+
+<p><font face="Arial">Zjednodušené zapojení ERAM100:</font></p>
+
+<p><a href="img/ERAM100.png"><font face="Arial"><img
+src="img/ERAM100_m.jpg" border="0" width="400" height="215"></font></a></p>
+
+<p><font face="Arial">Download zdrojových kódů a firmware pro
+ERAM100 (překlad s WinAVR): </font><a href="dwn/ERAM100.zip"><font
+face="Arial">dwn/ERAM100.zip</font></a><font face="Arial">.</font></p>
+
+<h2><font face="Arial">Downloady</font></h2>
+
+<p><a href="dwn/ET57_src.zip"><font face="Arial">Zdrojové kódy
+ET-57 s firmware</font></a></p>
+
+<p><a href="dwn/ERAM100.zip"><font face="Arial">Zdrojové kódy
+ERAM100 s firmware a schéma</font></a></p>
+
+<p><a href="dwn/ET57_diagram.zip"><font face="Arial">Schéma
+zapojení v Eagle Free</font></a></p>
+
+<p><a href="dwn/ET57_help.zip"><font face="Arial">Uživatelská
+příručka - Česky (podrobný manuál)</font></a></p>
+
+<p><a href="dwn/ET57_help_FR.zip"><font face="Arial">Uživatelská
+příručka - Francouzsky</font></a></p>
+
+<p><a href="dwn/ET57_help_EN.zip"><font face="Arial">Uživatelská
+příručka - Anglicky</font></a></p>
+
+<p><a href="dwn/ET57_png.zip"><font face="Arial">Grafické
+podklady</font></a><font face="Arial"> (schéma a plošný spoj)</font></p>
+
+<h2><font face="Arial">Použité součástky</font></h2>
+
+<p><font face="Arial">Poznámka: Uvedený LCD displej není
+ověřený zda s uvedeným zapojením funguje a byl vybrán jen
+podle podobnosti.</font></p>
+
+<ul>
+    <li><font face="Arial">958-174, 1 kus, ATMEGA8A-AU TQFP32
+        ATMEL, 66 Kč </font><a
+        href="https://www.gme.cz/atmega8a-au-tqfp32-atmel"><font
+        face="Arial">https://www.gme.cz/atmega8a-au-tqfp32-atmel</font></a></li>
+    <li><font face="Arial">513-219, 1 kus, LCD alfanumerický
+        displej 2x16 znaků, zelený WH1602A-YGH-CT, 139 Kč </font><a
+        href="https://www.gme.cz/lcd-alfanumericky-displej-winstar-wh1602a-ygh-ct"><font
+        face="Arial">https://www.gme.cz/lcd-alfanumericky-displej-winstar-wh1602a-ygh-ct</font></a></li>
+    <li><font face="Arial">832-177, 1 kus, Konektor USB-MINI B F
+        SMD, 17 Kč </font><a
+        href="https://www.gme.cz/usb-konektor-usb-mini-b-f-smd"><font
+        face="Arial">https://www.gme.cz/usb-konektor-usb-mini-b-f-smd</font></a></li>
+    <li><font face="Arial">630-158, 40 kusů, Mikrospínač
+        TC-0108-T, 2.80 Kč (10 ks 2.11) ... 84.40 Kč </font><a
+        href="https://www.gme.cz/tc-0108-t"><font face="Arial">https://www.gme.cz/tc-0108-t</font></a></li>
+    <li><font face="Arial">832-017, 1 kus, Kolíková lišta
+        S1G20 2,54mm, 3.60 Kč </font><a
+        href="https://www.gme.cz/oboustranny-kolik-s1g20-2-54mm"><font
+        face="Arial">https://www.gme.cz/oboustranny-kolik-s1g20-2-54mm</font></a></li>
+    <li><font face="Arial">832-470, 1 kus, Kolíková lišta
+        S1G08W 2,54mm, 2.30 Kč </font><a
+        href="https://www.gme.cz/oboustranny-kolik-s1g08w-2-54mm"><font
+        face="Arial">https://www.gme.cz/oboustranny-kolik-s1g08w-2-54mm</font></a></li>
+    <li><font face="Arial">906-096, 1 kus, Keramický kondenzátor
+        CKS0805 100n/50V X7R 10%, 5.50 Kč </font><a
+        href="https://www.gme.cz/cks0805-100n-50v-x7r-10-yageo"><font
+        face="Arial">https://www.gme.cz/cks0805-100n-50v-x7r-10-yageo</font></a></li>
+    <li><font face="Arial">906-089, 1 kus, Keramický kondenzátor
+        CKS0805 10n/50V X7R 10% YAGEO, 2.20 Kč </font><a
+        href="https://www.gme.cz/cks0805-10n-50v-x7r-10-yageo"><font
+        face="Arial">https://www.gme.cz/cks0805-10n-50v-x7r-10-yageo</font></a></li>
+    <li><font face="Arial">901-029, 2 kusy, SMD Rezistor R0805
+        1k0 5%, 0.68 Kč ... 1.36 Kč </font><a
+        href="https://www.gme.cz/r0805-1k0-5-yageo"><font
+        face="Arial">https://www.gme.cz/r0805-1k0-5-yageo</font></a></li>
+    <li><font face="Arial">901-573, 1 kus, SMD Rezistor R0805 15R
+        1%, 2.50 Kč </font><a
+        href="https://www.gme.cz/r0805-15r-1-yageo"><font
+        face="Arial">https://www.gme.cz/r0805-15r-1-yageo</font></a></li>
+    <li><font face="Arial">661-073, 1 kus, Fotocuprextit
+        75x100x1,5 jednovrstvý, 39 Kč </font><a
+        href="https://www.gme.cz/fotocuprextit-75x100x1-5-jednovrstvy"><font
+        face="Arial">https://www.gme.cz/fotocuprextit-75x100x1-5-jednovrstvy</font></a></li>
+</ul>
+
+<p><font face="Arial">Součet ceny za vše 324 Kč (bez
+fotocuprextitu a bez krytu).</font></p>
+
+<p align="right"><font face="Arial">Miroslav Němeček</font></p>
+
+<p align="left"><a href="../index.html"><font size="3" face="Arial">&lt;&lt;&nbsp;Zpět</font></a></p>
+<p>&nbsp;</p>
+
+</body>
+</html>

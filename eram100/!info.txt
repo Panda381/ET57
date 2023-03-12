@@ -1,0 +1,1 @@
+ATmega8L fuses: low 0xE4 (default 0xE1), high 0xD9 (default 0xD9)

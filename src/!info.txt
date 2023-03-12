@@ -1,0 +1,42 @@
+Fuses:
+------
+ET-57 hardware:
+  ATmega8 fuse: low E4 (default E1), high D1 (default D9)
+
+ET-58 hardware:
+  ATmega88 fuse: low 42 (default 62), high D6 (default DF), ext F9 (default F9)
+  ATmega168 fuse: low 42 (default 62), high D6 (default DF), ext F9 (default F9)
+  ATmega328 fuse: low 42 (default 62), high D1 (default D9), ext FE (default FF)
+
+
+Registers:
+----------
+ R0: Dsz, N
+ R1: sum y
+ R2: sum y^2
+ R3: sum x
+ R4: sum x^2
+ R5: sum x*y
+ R6:
+ R7: reg. T
+ R8: indirect register (STO*, RCL*, ...)
+ R9: indirect register INV (INV STO*, INV RCL*, INV Exc*)
+
+
+Keyboard codes:
+---------------
+11:2nd  (16:2nd')/  12:INV  (17:INV')/  13:lnx    18:log  /  14:CE     19:C.t  /  15:CLR   10:OFF
+
+21:LRN   26:D.MS /  22:x<>t   27:P->R/  23:x^2    28:sin  /  24:Vx     29:cos  /  25:1/x   20:tan
+
+31:SST   36:Pause/  32:STO    37:Ins /  33:RCL    38:Exc  /  34:SUM    39:Prd  /  35:y^x   30:pi
+
+41:BST   46:Nop  /  42:EE     47:Del /  43:(      48:Fix  /  44:)      49:Int  /  45: :    40:IxI
+
+51:GTO   56:Dsz  /  07(52):7  57:STO*/  08(53):8  58:RCL* /  09(54):9  59:SUM* /  55: x    50:Deg
+
+61:SBR   66:x=t  /  04(62):4  67:Inc*/  05(63):5  68:Exc* /  06(64):6  69:Prd* /  65: -    60:Rad
+
+71:RST   76:x>=t /  01(72):1  77:Inc /  02(73):2  78:Pgm  /  03(74):3  79:Rand /  75: +    70:Grad
+
+81:R/S   86:Lbl  /  00(82):0  87 x!  /  83: .     88:Stat /  84:+/-    89:Mean /  85: =    80:Var
